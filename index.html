@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
     <title>Perpustakaan Desri</title>
@@ -25,49 +26,79 @@
 
 <body onload="showPage('login')">
 
-<!-- LOGIN -->
+<!-- ================= LOGIN ================= -->
 <div id="login" class="page">
     <h2>Login Perpustakaan Desri</h2>
+
     <form onsubmit="showPage('home'); return false;">
-        <input type="text" placeholder="Last Name" required>
-        <input type="text" placeholder="First Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <input type="text" placeholder="No Handphone" required>
+        <p>Last Name:</p>
+        <input type="text">
+
+        <p>First Name:</p>
+        <input type="text">
+
+        <p>Email:</p>
+        <input type="email">
+
+        <p>Password:</p>
+        <input type="password">
+
+        <p>No Handphone:</p>
+        <input type="text">
+
         <input type="submit" value="Login">
     </form>
-    <p>Belum punya akun? 
+
+    <p>Belum punya akun?
         <a href="#" onclick="showPage('register')">Daftar di sini</a>
     </p>
 </div>
 
-<!-- REGISTER -->
+<!-- ================= REGISTER ================= -->
 <div id="register" class="page">
     <h2>Daftar Akun Baru</h2>
+
     <form onsubmit="showPage('login'); return false;">
-        <input type="text" placeholder="Last Name" required>
-        <input type="text" placeholder="First Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="No Handphone" required>
-        <input type="password" placeholder="Password" required>
+        <p>Last Name:</p>
+        <input type="text">
+
+        <p>First Name:</p>
+        <input type="text">
+
+        <p>Email:</p>
+        <input type="email">
+
+        <p>No Handphone:</p>
+        <input type="text">
+
+        <p>Password:</p>
+        <input type="password">
+
         <input type="submit" value="Daftar">
     </form>
 </div>
 
-<!-- HOME -->
+<!-- ================= HOME ================= -->
 <div id="home" class="page">
     <nav>
         <a href="#" onclick="showPage('home')">Home</a>
         <a href="#" onclick="showPage('collection')">Collection</a>
         <a href="#" onclick="showPage('service')">Service</a>
-        <a href="#" onclick="showPage('about')">About</a>
-        <a href="#" onclick="showPage('contact')">Contact</a>
+        <a href="#" onclick="showPage('about')">About Us</a>
+        <a href="#" onclick="showPage('contact')">Contact Us</a>
         <a href="#" onclick="logout()">Logout</a>
     </nav>
 
+    <hr>
+
     <h1>Welcome to Nias Heritage Library</h1>
+    <h2>Sebelum itu izinkan saya perkenalan terlebih dahulu</h2>
     <p>Nama : Desri Moralina Hia</p>
-    <p>NIM : 230709012</p>
+    <p>NIM  : 230709012</p>
+
+    <p><a href="https://www.instagram.com/desri_hia">Instagram Saya</a></p>
+    <p><a href="https://www.facebook.com/share/1GPpua2KP3/">Facebook Saya</a></p>
+    <p><a href="https://drive.google.com/file/d/1wZL1pqHDX50uAKH0aYgl5e1xYB8LVlVf/view?usp=drivesdk">Curriculum Vitae</a></p>
 
     <h3>Video Cara Mengisi KRS</h3>
     <iframe width="560" height="315"
@@ -75,38 +106,46 @@
     </iframe>
 </div>
 
-<!-- COLLECTION -->
+<!-- ================= COLLECTION ================= -->
 <div id="collection" class="page">
     <nav>
         <a href="#" onclick="showPage('home')">Home</a>
         <a href="#" onclick="showPage('collection')">Collection</a>
         <a href="#" onclick="showPage('service')">Service</a>
-        <a href="#" onclick="showPage('about')">About</a>
-        <a href="#" onclick="showPage('contact')">Contact</a>
+        <a href="#" onclick="showPage('about')">About Us</a>
+        <a href="#" onclick="showPage('contact')">Contact Us</a>
         <a href="#" onclick="logout()">Logout</a>
     </nav>
+
+    <hr>
 
     <h2>Collection</h2>
     <ul>
         <li>Asal Usul Orang Nias</li>
-        <li>Adat dan Budaya Suku Nias</li>
+        <li>Adat dan Budaya Suku Bangsa Nias</li>
         <li>Museum Pusaka Nias</li>
         <li>Cerita Rakyat Nias</li>
-        <li>Jurnal Penelitian</li>
-        <li>Dokumentasi</li>
+        <li>Jurnal Penelitian Nias</li>
+        <li>Koleksi Foto dan Video</li>
     </ul>
+
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/6mIdhdBSbbo">
+    </iframe>
 </div>
 
-<!-- SERVICE -->
+<!-- ================= SERVICE ================= -->
 <div id="service" class="page">
     <nav>
         <a href="#" onclick="showPage('home')">Home</a>
         <a href="#" onclick="showPage('collection')">Collection</a>
         <a href="#" onclick="showPage('service')">Service</a>
-        <a href="#" onclick="showPage('about')">About</a>
-        <a href="#" onclick="showPage('contact')">Contact</a>
+        <a href="#" onclick="showPage('about')">About Us</a>
+        <a href="#" onclick="showPage('contact')">Contact Us</a>
         <a href="#" onclick="logout()">Logout</a>
     </nav>
+
+    <hr>
 
     <h2>Informasi Layanan</h2>
     <ul>
@@ -114,42 +153,71 @@
         <li>Sabtu : 09.00 - 14.00</li>
         <li>Minggu : Tutup</li>
     </ul>
+
+    <ul>
+        <li>Peminjaman Buku</li>
+        <li>Pengembalian Buku</li>
+        <li>Baca di Tempat</li>
+        <li>Layanan Referensi</li>
+    </ul>
 </div>
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 <div id="about" class="page">
     <nav>
         <a href="#" onclick="showPage('home')">Home</a>
         <a href="#" onclick="showPage('collection')">Collection</a>
         <a href="#" onclick="showPage('service')">Service</a>
-        <a href="#" onclick="showPage('about')">About</a>
-        <a href="#" onclick="showPage('contact')">Contact</a>
+        <a href="#" onclick="showPage('about')">About Us</a>
+        <a href="#" onclick="showPage('contact')">Contact Us</a>
         <a href="#" onclick="logout()">Logout</a>
     </nav>
 
+    <hr>
+
     <h2>Tentang Perpustakaan Desri</h2>
-    <p>Perpustakaan ini mendukung kebutuhan informasi dan literasi masyarakat.</p>
+    <p>Perpustakaan Desri didirikan untuk mendukung kebutuhan informasi mahasiswa dan masyarakat.</p>
+    <p>Berdiri sejak tahun 2026 dengan tujuan meningkatkan literasi dan akses informasi.</p>
 </div>
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 <div id="contact" class="page">
     <nav>
         <a href="#" onclick="showPage('home')">Home</a>
         <a href="#" onclick="showPage('collection')">Collection</a>
         <a href="#" onclick="showPage('service')">Service</a>
-        <a href="#" onclick="showPage('about')">About</a>
-        <a href="#" onclick="showPage('contact')">Contact</a>
+        <a href="#" onclick="showPage('about')">About Us</a>
+        <a href="#" onclick="showPage('contact')">Contact Us</a>
         <a href="#" onclick="logout()">Logout</a>
     </nav>
 
-    <h2>Contact</h2>
+    <hr>
+
+    <h2>Contact Us</h2>
+
     <p>Email: desmor830@gmail.com</p>
     <p><a href="https://wa.me/6285362867026">WhatsApp</a></p>
+    <p><a href="https://www.instagram.com/desri_hia">Instagram</a></p>
+    <p><a href="https://www.facebook.com/share/1GPpua2KP3/">Facebook</a></p>
+
+    <h3>Formulir Pesan</h3>
+    <form>
+        <p>Nama:</p>
+        <input type="text">
+
+        <p>Email:</p>
+        <input type="email">
+
+        <p>Pesan:</p>
+        <textarea rows="4" cols="30"></textarea>
+
+        <input type="submit" value="Kirim">
+    </form>
 </div>
 
-<!-- WHATSAPP FLOAT -->
+<!-- ================= WHATSAPP FLOAT ================= -->
 <div class="whatsapp">
-    <a href="https://wa.me/6285362867026" target="_blank">
+    <a href="https://wa.me/6281360758627" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png">
     </a>
 </div>
